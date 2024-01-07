@@ -1,11 +1,11 @@
 # Description of main commands
 
-* `git init` - initialisation of repository
-* `git status` - check status of repo
-* `git add` - save changes
-* `git commit` - apply changes to repo
-* `git remote add origin 'ssh key'` - get remote connection with repo on github
-* `git push` - send changes to remote repo
+* `git init` - инициализируем репозиторий в текущей папке (в которой находимся)
+* `git status` - проверяем статус в репозитории (выведет информацию о файлах подлежащих коммиту, измененения и т.д.). А в процессе мержа показывается информацию о конфлитке в файлах
+* `git add file1 [file2 file3]` - "запоминает" изменения в указанных файлах, либо можно указать `.`, чтобы добавить все файлы в папке.
+* `git commit` - Фиксирует изменения в репозитории. `-m` - сообщение к коммиту, `--no-edit` - без сообщения, `--amend` - редактирование последнего коммита.
+* `git remote add origin 'ssh key'` - устанавливает соединение локального репозитория с удаленным репозиторием. (origin - имя удаленного репозитория)
+* `git push` - отправляет изменения в удаленный репозиторий. `-u origin branch` (branch - название ветки) - отправляет изменения в определеннной ветке, нужно прописывать main (master) при первом "пуше" в удаленный репозиторий, который создал сам. 
 ---
 # Hash, logs, status, commits
 
